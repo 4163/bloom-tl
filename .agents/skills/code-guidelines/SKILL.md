@@ -28,7 +28,7 @@ Trace downstream consumers of changed helpers, configuration, CLI commands and c
 
 Use existing checks and focused runtime verification. Do not create new test suites or harnesses during implementation. Keep disposable probes and scratch artifacts outside the project, and use copies or isolated fixtures when checking chapter mutations. Preserve existing originals, revisions and user edits.
 
-Choose checks that establish the changed behavior. A syntax or import check does not establish that a browser interaction, native render or persisted revision works. Exercise the relevant operation when available, inspect its result, and report any verification that could not run. Broaden checks when failures or affected consumers justify it.
+Choose checks that establish the changed behavior. A syntax or import check does not establish that a browser interaction, native render or persisted revision works. Avoid using browser automation/browser subagent and computer use skill. Exercise the relevant operation when available, inspect its result, and report any verification that could not run. Broaden checks when failures or affected consumers justify it.
 
 Update the document that owns a changed contract. Keep engineering guidance here, chapter operation instructions in the workflow, and environment instructions in setup. Use [unslop](../unslop/SKILL.md) for changed documentation, prompts, comments and interface copy. Keep Markdown prose paragraphs on one source line, preserving real lists, tables, code blocks and intentional text breaks.
 
