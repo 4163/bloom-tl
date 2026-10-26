@@ -56,9 +56,18 @@ The bundled `projects/cosmos-5-final/` chapter, 秋桜が咲いた日に 第5-�
 - [Page lettering](.agents/skills/lettering/SKILL.md)
 - [Ownership and storage](.agents/architecture.md)
 
-Storage budget: ~0.3 GB for the code and engine checkout, plus ~10 GB for the bundled `cosmos-5-final` example. Allow ~10-20 GB for installed prerequisites, dependencies and model downloads, and ~10-30 GB per active chapter for agent revisions and manual PSD edits. Plan for ~30-60 GB total with the example and one active chapter, give or take. GPU packages, larger scans and longer revision histories can need more.
+Storage reference for the current working copy, using decimal GB:
 
-Requires Python 3.11+, Node.js 20+, Git and FFmpeg. The agent sets up a separate Python 3.12 environment for the pinned engine. You need an image editor only for manual PSD edits.
+- Code, engine checkout and Node dependencies: ~0.1 GB.
+- Bundled example chapter, including retained revisions, working files and exports: ~11 GB (~10 GiB).
+- Local runtime, including installed lettering dependencies and temporary files: ~6 GB.
+- Local Git data: ~3 GB; a fresh clone can differ.
+
+Together these total ~20 GB, give or take, based on file sizes rather than a measurement of allocated disk space. This excludes globally installed prerequisites and additional downloads. The measured runtime supports retained-page lettering; a complete OCR/inpainting environment, model weights, GPU packages and installer caches need additional space depending on the setup. See [environment setup](.agents/setup.md).
+
+New chapter storage depends on scan resolution, changed PSDs, retained intermediate runs and final exports. New revisions share unchanged PNGs and PSDs through hard links where supported, falling back to copies otherwise. Existing historical copies remain, and folder-size totals can count shared files more than once. There is no fixed storage requirement per chapter.
+
+Requires Python 3.11+, Node.js 20+, Git and FFmpeg. The agent sets up a separate Python 3.12 environment for the pinned engine. You only need an image editor for manual PSD edits.
 
 ## Engine and license
 
