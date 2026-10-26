@@ -55,3 +55,9 @@ The bundled `projects/cosmos-5-final/` chapter, 秋桜が咲いた日に 第5-�
 Storage budget: ~0.3 GB for the code and engine checkout, plus ~10 GB for the bundled `cosmos-5-final` example. Allow ~10-20 GB for installed prerequisites, dependencies and model downloads, and ~10-30 GB per active chapter for agent revisions and manual PSD edits. Plan for ~30-60 GB total with the example and one active chapter, give or take. GPU packages, larger scans and longer revision histories can need more.
 
 Requires Python 3.11+, Node.js 20+, Git and FFmpeg. The agent sets up a separate Python 3.12 environment for the pinned engine. You need an image editor only for manual PSD edits.
+
+## Engine and license
+
+This project uses [hgmzhn/manga-translator-ui](https://github.com/hgmzhn/manga-translator-ui) for OCR, inpainting and text rendering. The engine is pinned as the `manga-translator-ui/` submodule. This repository adds the agent workflow, chapter records, browser review, manual PSD revisions and final export.
+
+Copyright © 2026 bloom-tl contributors. This repository's software is licensed under [GNU GPL-3.0](LICENSE), matching the engine's [license](https://github.com/hgmzhn/manga-translator-ui/blob/a194a54b397782de1aafaf1684f039624e2229d1/LICENSE.txt). Third-party dependencies and models retain their own licenses. Manga scans, artwork and chapter content are outside this software license; their rights remain with their respective owners.
