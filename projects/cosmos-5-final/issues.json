@@ -179,5 +179,36 @@
     "decision": "Re-rendered text layers with active font fallback to render the proper em dash rather than the corrupted numero sign.",
     "decided_by": "agent",
     "decided_at": "2026-10-25T18:53:21+00:00"
+  },
+  {
+    "id": "q0009",
+    "stage": "visual",
+    "record": "0059",
+    "revision": "r005",
+    "question": "add a subtitle rather than overwriting the signature",
+    "status": "resolved",
+    "at": "2026-10-26T12:18:12+00:00",
+    "regions": [
+      {
+        "id": "area-1",
+        "coordinate_space": "page_pixels",
+        "x": 642,
+        "y": 522,
+        "width": 272,
+        "height": 134,
+        "canvas_size": [
+          1057,
+          1500
+        ],
+        "image_path": "revisions/r005/pages/0059.png",
+        "image_sha256": "cede7e9b18faabae1d98de8904eb8799acf81d449f81e830db0296e3eb0ab7ab"
+      }
+    ],
+    "addressed_revision": "r060",
+    "addressed_image_path": "revisions/r060/pages/0059.png",
+    "addressed_image_sha256": "231eca9834ccfc592c2fc6e6f1317ee4dea436bc19710f943121c3d609155d02",
+    "decision": "Preserved the Japanese signature and added Kei Arai as a close English subtitle immediately beneath its right edge, without covering the signature or gray dots.",
+    "decided_by": "agent",
+    "decided_at": "2026-10-26T12:23:39+00:00"
   }
 ]

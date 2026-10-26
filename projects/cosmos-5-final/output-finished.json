@@ -1,8 +1,8 @@
 {
-  "sha256": "5c7cbdec52dfd1bf5040e3655554dbc4750a02121699824a5a350537023a0c94",
-  "at": "2026-10-26T09:38:12+00:00",
+  "sha256": "ef46b917790985db832afbb8addfde78595f5b4037adc4bf06968fd9222615f9",
+  "at": "2026-10-26T12:29:19+00:00",
   "by": "user",
-  "note": "Sanitized chapter for public repository release, keeping 36 non-explicit pages.",
+  "note": "User requested that the signature subtitle revision be included in the final output and that the revision and updated final output be committed and pushed.",
   "pages": [
     {
       "id": "0001",
@@ -210,8 +210,8 @@
     },
     {
       "id": "0059",
-      "revision": "r005",
-      "sha256": "cede7e9b18faabae1d98de8904eb8799acf81d449f81e830db0296e3eb0ab7ab",
+      "revision": "r060",
+      "sha256": "231eca9834ccfc592c2fc6e6f1317ee4dea436bc19710f943121c3d609155d02",
       "manual": false
     },
     {
@@ -220,11 +220,5 @@
       "sha256": "4a825b6c9c93cf8b11316c853d3e34300b770d76f1dc7a2027fb21285ff214bd",
       "manual": false
     }
-  ],
-  "identity_migration": {
-    "from": "cosmos",
-    "to": "cosmos-5-final",
-    "previous_sha256": "ac5596a90bf9d2b4bbe3a2a97358b917d2a5e59ac466548a2f3875d112152074",
-    "note": "Chapter identity renamed at the user's request. Source wording, English wording and rendered page bytes are unchanged."
-  }
+  ]
 }
