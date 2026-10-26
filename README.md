@@ -24,6 +24,10 @@ Supply an existing archive or scans folder, or place the files under `input/<cha
 
 The agent gives you the review app's URL (http://localhost:8765/). Completed revisions and addressed notes update without a page reload.
 
+<p align="center">
+  <img src="web/readme-review.png" alt="Browser review of page 0037, comparing the Japanese original with the English translation" width="960">
+</p>
+
 - Compare each page with its original or an earlier revision using Compare with and the comparison slider.
 - Leave feedback in chat or save it with `Append note`. To mark specific areas, draw boxes with `Mark area`, then choose Write note. Saved notes wait for the agent's next review pass. Remove note withdraws a request.
 - Output selection shows what will be exported. Each page follows its latest completed version unless you choose `Use this version for output`. `Use latest` clears that choice. Browsing older versions does not change the output.
