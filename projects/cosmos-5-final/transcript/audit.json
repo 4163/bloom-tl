@@ -1,0 +1,7 @@
+{
+  "sha256": "60840b0d32df3a391d546e0d9267ef8a0e71b779a0c2a049a4608ccb71eb3065",
+  "coverage_sha256": "633312fde21a23188201ea2826186cc7e5b97e66a331e6696c64a870c1dbcf6e",
+  "records": 209,
+  "reviewer": "historical session",
+  "note": "Imported the transcript used by the user-approved final export. No new OCR or visual pass was performed during import."
+}

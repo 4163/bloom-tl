@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-24T23:31:07+00:00",
+  "revision": "r005",
+  "composition_verified": true,
+  "layer_order_verified": true,
+  "psd_sha256": "842b3e02b81d2b06e511d46ee34234cbc8e4a637cdbb9ff6b3eb34a03fd39b06",
+  "preview_sha256": "fa0867684564e7419efa941ff144b75a3a79bd717f614bc8bddd45a03b7e1e51",
+  "note": "Raster text, cleanup and original layers. Pixel drawing remains native; JavaScript writes the PSD container."
+}

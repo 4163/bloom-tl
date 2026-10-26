@@ -1,0 +1,48 @@
+/* Shared neutral colors for the review app's light and dark themes. */
+:root {
+  color-scheme: light;
+  scrollbar-gutter: stable;
+  --bg: #f3f3f3;
+  --surface: #fff;
+  --surface-alt: #fafafa;
+  --field: #f5f5f5;
+  --border: #d4d4d4;
+  --text: #1a1a1a;
+  --muted: #626262;
+  --accent: #0078d4;
+  --hover: #e8f0f8;
+  --success: #287646;
+  --danger: #b00020;
+  --shadow: 0 8px 28px #0000000b;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1e1e1e;
+  --surface: #252526;
+  --surface-alt: #2d2d2d;
+  --field: #1e1e1e;
+  --border: #444;
+  --text: #e8e8e8;
+  --muted: #aaa;
+  --accent: #67b4f5;
+  --hover: #2a3545;
+  --success: #83c89e;
+  --danger: #ff7692;
+  --shadow: 0 8px 28px #0003;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, sans-serif; }
+button, select, textarea { font: inherit; color: inherit; }
+button, select { min-height: 36px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); padding: 5px 11px; }
+button { cursor: pointer; }
+button:hover, select:hover { background: var(--hover); }
+button:disabled { cursor: default; opacity: .4; }
+button.quiet { background: transparent; }
+button.danger { color: var(--danger); border-color: color-mix(in srgb, var(--danger) 35%, var(--border)); }
+button.danger:hover:not(:disabled) { background: color-mix(in srgb, var(--danger) 10%, transparent); }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+[hidden] { display: none !important; }
+h1, h2, p { margin: 0; }
+h1 { font-size: 23px; font-weight: 600; letter-spacing: -.035em; }
+h2 { font-size: 17px; font-weight: 600; }

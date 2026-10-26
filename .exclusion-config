@@ -1,0 +1,27 @@
+# Local checkout exclusions, relative to the named submodule.
+# Applied by the commit-pipeline during setup and before commits.
+# Git retains these files at the pinned commit. Generated and untracked files stay untouched.
+
+[manga-translator-ui]
+# Upstream automation and development formatting.
+.editorconfig
+.github/
+desktop_qt_ui/ruff.toml
+
+# Upstream tests and documentation website.
+test/
+doc/wiki/
+
+# Development history, audits and implementation notes.
+doc/CHANGELOG_*.md
+doc/CODE_REVIEW_*.md
+doc/DECISION_*.md
+doc/REFACTOR_*.md
+doc/DEBUGGING.md
+doc/DEVELOPMENT.md
+
+# Binary release builds. Keep the installer and its package checker for backend setup.
+packaging/build_packages.py
+packaging/build_utils/build_pydensecrf_wheel.py
+packaging/*.spec
+packaging/pyi_rth_onnxruntime.py

@@ -1,0 +1,24 @@
+# Disposable runtimes, local virtual environments, caches, and credentials.
+.runtime/
+input/
+.venv/
+env/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.whl
+.cache/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Ignore user chapter projects by default; keep the reference chapter tracked.
+projects/*
+!projects/cosmos-5-final/
+
+# Intermediate runs inside chapters are disposable
+projects/*/work/

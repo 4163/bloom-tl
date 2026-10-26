@@ -1,0 +1,3 @@
+[submodule "manga-translator-ui"]
+	path = manga-translator-ui
+	url = https://github.com/hgmzhn/manga-translator-ui.git

@@ -1,0 +1,153 @@
+{
+  "scope": [
+    "cosmos-5-final"
+  ],
+  "style": {
+    "register": "Natural, conversational English; retain profanity and changes in politeness. Render Kansai speech informally without substituting a specific English regional accent.",
+    "honorifics": "Retain -kun, -chan, and -san when attached to names. Render direct-address お兄ちゃん as Big Brother and references to him as my brother or her brother as context requires.",
+    "uncertainty": "Dialogue uncertainty markers have been resolved from the page images. Remaining name-reading limitations are recorded in notes.md.",
+    "background": "cosmos-5-final.p0001.r002 and cosmos-5-final.p0001.r003 have empty en strings: skip translation and typesetting, leaving the ultrasound labels untouched. Also leave the CLOSE sign and the handwritten 40,531円 unchanged."
+  },
+  "terms": [
+    {
+      "ja": "秋桜（コスモス）が咲いた日に / 秋桜が咲いた日に / Cosmos ga Saita hi ni",
+      "en": "The Day the Cosmos Bloomed",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Consistent translated title; 秋桜 is read cosmos here."
+    },
+    {
+      "ja": "まつり / まつりちゃん",
+      "en": "Matsuri / Matsuri-chan",
+      "scope": [
+        "cosmos-5-final"
+      ]
+    },
+    {
+      "ja": "弘樹 / 弘樹くん / ヒロくん",
+      "en": "Hiroki / Hiroki-kun / Hiro-kun",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Keep Hiroki as the consistent editorial reading, with Hiro-kun for the explicit nickname. Distinct from the unnamed older brother. The furigana at cosmos-5-final.p0004.r007 reads あいつ (that guy), not a pronunciation of the name; the full name reading remains unconfirmed."
+    },
+    {
+      "ja": "いちか / 一花 / いちかちゃん",
+      "en": "Ichika / Ichika-chan",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Kana and kanji spellings refer to the same child."
+    },
+    {
+      "ja": "お兄ちゃん / おにーちゃん / 兄 / 兄貴",
+      "en": "Big Brother / brother / older brother",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Matsuri's unnamed older brother; do not conflate him with Hiroki."
+    },
+    {
+      "ja": "親父",
+      "en": "Dad",
+      "scope": [
+        "cosmos-5-final"
+      ]
+    },
+    {
+      "ja": "義母さん",
+      "en": "stepmother",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Family context supports stepmother here, not mother-in-law."
+    },
+    {
+      "ja": "連れ子どうし",
+      "en": "stepsiblings",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Used specifically for Hiroki and Matsuri; do not generalize this relationship to the unnamed older brother."
+    },
+    {
+      "ja": "松永さん",
+      "en": "Matsunaga-san",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Matsunaga is confirmed by the printed furigana まつなが in cosmos-5-final.p0008.r006."
+    },
+    {
+      "ja": "小板橋さん",
+      "en": "Koitabashi-san",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Koitabashi is confirmed by the printed furigana こいたばし in cosmos-5-final.p0028.r004. Retain -san consistently."
+    },
+    {
+      "ja": "荒井啓",
+      "en": "Kei Arai",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Romanization explicitly supplied in cosmos-5-final.p0060.r007."
+    },
+    {
+      "ja": "ハンバーグ",
+      "en": "hamburger steak",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "The plated meat dish, not a burger in a bun."
+    },
+    {
+      "ja": "認知",
+      "en": "acknowledgment of paternity",
+      "scope": [
+        "cosmos-5-final"
+      ]
+    },
+    {
+      "ja": "ゴム / 生",
+      "en": "condom / without a condom",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Sexual-context meanings."
+    },
+    {
+      "ja": "ガチャ",
+      "en": "CLICK",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Door or latch sound."
+    },
+    {
+      "ja": "コアマガジン / メガストアコミックス",
+      "en": "Core Magazine / Megastore Comics",
+      "scope": [
+        "cosmos-5-final"
+      ]
+    },
+    {
+      "ja": "ぽん ぽんっ",
+      "en": "PAT PAT",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Belly-patting sound effect in cosmos-5-final.p0018.r005."
+    },
+    {
+      "ja": "ス…",
+      "en": "SHIFT...",
+      "scope": [
+        "cosmos-5-final"
+      ],
+      "note": "Quiet body movement in cosmos-5-final.p0034.r006; not speech."
+    }
+  ]
+}

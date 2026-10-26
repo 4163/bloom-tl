@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-24T23:30:10+00:00",
+  "source": "E:\\Projects\\manga-translation\\projects\\cosmos-5-final\\work\\layered-draft-001\\pages",
+  "pages": [
+    {
+      "id": "0001",
+      "sha256": "38f3d15b61a8556dc616d2057d9395b96bd132f0979b23ae42488bdf879e90cd"
+    },
+    {
+      "id": "0002",
+      "sha256": "fd1c1ec338553d5315902122b276ec64025183fbfb3923643a73950e5d565129"
+    },
+    {
+      "id": "0003",
+      "sha256": "aadf3bb301715ae5eafb87924dec4d667e1b191f97aaf744e49ab479dcf6388f"
+    },
+    {
+      "id": "0004",
+      "sha256": "44d4a882957aed5d7b0f20c8d8531704ff3e6ef6b8f7fa23d39f20cd2bbb1c1f"
+    },
+    {
+      "id": "0005",
+      "sha256": "b4f650e1bac186934896e8e17d39af1c8c5cd8381db99d2a8a8c7cefbb5e7e94"
+    },
+    {
+      "id": "0006",
+      "sha256": "4e9fdab974f03e14df55bfdd70ca4ae82adef2047e66561d543c61aa1262e013"
+    },
+    {
+      "id": "0007",
+      "sha256": "f4de83e5c612b7a721bf042cfa4cbb1dfc45c48effed753fb5e1d1893d440c5c"
+    },
+    {
+      "id": "0008",
+      "sha256": "9d4b70a6846fe0b05ec28466e89cc5f66077eb1a3a417df62e068481aeb3d973"
+    },
+    {
+      "id": "0009",
+      "sha256": "7eed7748e1cdf9c5e5d5527357ee437ab290f8399006e27a39518fad9eda58fe"
+    },
+    {
+      "id": "0010",
+      "sha256": "a48af229f74b7500b88d04d141941789b03077c90cb28b219805087d96e4439d"
+    },
+    {
+      "id": "0011",
+      "sha256": "524a1265dd08b4702b8a555553f57c3468a0df4ecba31de1db504688c537fc49"
+    },
+    {
+      "id": "0012",
+      "sha256": "9e3ca30ec0316c3b193f7fd3e7cc861632eb9bf3f91860a041fe279e7fa991ff"
+    },
+    {
+      "id": "0013",
+      "sha256": "d062f4f29f42e82d245a80bc2e81efa773abbd1fa83bf03d1e6a7a084c630a15"
+    },
+    {
+      "id": "0014",
+      "sha256": "85dbe904df81d019eac1afb79f74e838e22d0072742ddaf0c7e57ff716c34318"
+    },
+    {
+      "id": "0015",
+      "sha256": "078598d46f1a7fd0ff39cb2d1152b1b9ae5e3a5131d7231a0b4af4acdd62bf0f"
+    },
+    {
+      "id": "0016",
+      "sha256": "fa0867684564e7419efa941ff144b75a3a79bd717f614bc8bddd45a03b7e1e51"
+    },
+    {
+      "id": "0017",
+      "sha256": "5fa4ac7cea697b0a4831bd13ec23b51a0806047a681742cc38dc61419f324e00"
+    },
+    {
+      "id": "0018",
+      "sha256": "c067c8adebb044d52e1ed916914f48195a33f451efff8d50227a645c04c6b7cc"
+    },
+    {
+      "id": "0019",
+      "sha256": "0c9a37d3a2d41c9dc5d65986707eb3cd46aeed34fbf144a31d79fbe8407837a8"
+    },
+    {
+      "id": "0020",
+      "sha256": "79f4a5be77f77857ba25351fb3335aaa190a7c9b054936ebf68c64dede65fb25"
+    },
+    {
+      "id": "0021",
+      "sha256": "ed114067e710033e5a09eedb3762afc58ad18e78b75168de6fc5cd0136f7d411"
+    },
+    {
+      "id": "0022",
+      "sha256": "204d143aaefbdf54a8cd93b2b44030ff8fb80358ebb4a3565569cf3c400608f9"
+    },
+    {
+      "id": "0023",
+      "sha256": "b85a4aa621b39b84a76101745b86d912303f0a810516831f25f937f34de16a29"
+    },
+    {
+      "id": "0028",
+      "sha256": "c9936451d5d1707b6709373e602acc2940d7f58d2b2ecd9d6f1a4297e592477b"
+    },
+    {
+      "id": "0032",
+      "sha256": "76531b29263b95b37e3b9d3f65a9685691922306f4108d2f075c5c1c003cdb0c"
+    },
+    {
+      "id": "0033",
+      "sha256": "ee67e35908f402fdd57538457473b125d5b99591b11569546ceeb07f3279fc04"
+    },
+    {
+      "id": "0034",
+      "sha256": "c72bfce5fdd1b5c1a92dd1c87408d18b25df4199a5f76e4b31e96fdc4ee6bd09"
+    },
+    {
+      "id": "0035",
+      "sha256": "dfd17b9794399c2b4b070502d66306ad7e26bea60fb42beb732aab66497954a2"
+    },
+    {
+      "id": "0036",
+      "sha256": "1724202e8084bcbd35e0f6cdefeb11d8f04199d13b977ae55b254c05c766c55b"
+    },
+    {
+      "id": "0037",
+      "sha256": "9367e86556748d3e05077f592fa733597038f35531e9a7fef43c73dd71d0f77a"
+    },
+    {
+      "id": "0047",
+      "sha256": "c30eb054a65080b2057d12922a6e14a6b2da72e2b14c1f6c19bb0fbeb81b0ebb"
+    },
+    {
+      "id": "0048",
+      "sha256": "fb04c9c03f0084a2bb2d61c1b980cbfa2f58770cb3eed8cb8bde1efe4d71b6b8"
+    },
+    {
+      "id": "0049",
+      "sha256": "13debc182d52cf7dcc7d516df629bd5c8b9cd32594bf306640b3b1ce96c39e14"
+    },
+    {
+      "id": "0050",
+      "sha256": "1c20e5a06fbd84c7ffad485198ad42a75b906cc8bd8937a58debee695e978c92"
+    },
+    {
+      "id": "0059",
+      "sha256": "cede7e9b18faabae1d98de8904eb8799acf81d449f81e830db0296e3eb0ab7ab"
+    },
+    {
+      "id": "0060",
+      "sha256": "4a825b6c9c93cf8b11316c853d3e34300b770d76f1dc7a2027fb21285ff214bd"
+    }
+  ]
+}

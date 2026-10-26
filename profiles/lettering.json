@@ -1,0 +1,45 @@
+{
+  "name": "approved-session-style",
+  "dialogue": {
+    "font": "manga-translator-ui/fonts/anime_ace_3.ttf",
+    "case": "uppercase for ordinary balloon dialogue",
+    "alignment": "center",
+    "line_spacing": 1.1,
+    "letter_spacing": 1.0,
+    "stroke_width": 0.07,
+    "wrapping": "Phrase-aware manual breaks. Fit to the actual bubble cavity. No automatic hyphenation."
+  },
+  "prose": {
+    "font": "Segoe Print",
+    "alignment": "left",
+    "case": "sentence case",
+    "stroke_width": 0,
+    "commentary_canvas": [4072, 3674],
+    "commentary_original_width": 2572,
+    "commentary_margin_width": 1500,
+    "commentary_ink_rgb": [106, 93, 83],
+    "note": "Keep the original commentary art, with English in the right margin. Check ink color against the pale background."
+  },
+  "credits": {
+    "font": "Arial",
+    "heading_font": "Arial Bold",
+    "fallback": "manga-translator-ui/fonts/Arial-Unicode-Regular.ttf",
+    "case": "match publication hierarchy",
+    "stroke_width": 0,
+    "note": "Use neutral book typography, aligned columns and compact notices. Copy the layout into available blank space when appropriate."
+  },
+  "effects": {
+    "ordinary": "Anime Ace, horizontal lettering with original outline retained",
+    "artistic": "Preserve distinctive Japanese action lettering and add a short nearby English subtitle",
+    "gradient": "Use a soft white glow beneath the English. Do not fake the gradient or invent a balloon.",
+    "symbol_protection": "Keep hearts, signatures, intentional marks and censor bars."
+  },
+  "cleanup": {
+    "white_balloon": "Native white fill inside the original outline, including square narration boxes",
+    "art_background": "Native constrained masks and paste layers. Inspect at full size.",
+    "check": "Look for source glyph fragments, dots, seams, gray smudges and double outlines around and below new text."
+  },
+  "fonts": "Resolve fonts from the submodule or OS. Verify the actual font before rendering. Do not silently substitute.",
+  "precedence": "Per-page reviewed native layouts override these defaults. This profile preserves a preference, not identical font sizes across different source resolutions.",
+  "references": ".agents/workflow.md"
+}

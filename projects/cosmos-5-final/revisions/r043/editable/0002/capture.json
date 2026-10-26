@@ -1,0 +1,18 @@
+{
+  "original_source": "E:\\Projects\\manga-translation\\projects\\cosmos-5-final\\source\\pages\\0002.jpg",
+  "cleaned_source": "E:\\Projects\\manga-translation\\archive\\session-2026-10\\work\\review-v2\\projects-png\\cosmos-5-final\\source\\manga_translator_work\\inpainted\\0002_inpainted.png",
+  "original_source_sha256": "b95aa575519656aeaf74e12c6f9139ca4d018d3f9463f96659f16b673824f6f5",
+  "cleaned_source_sha256": "ab1d10151b64e8f19ebd4cfd4b9544965b55d228853123384b9662d692306d0b",
+  "cleanup_pixels": 9241,
+  "canvas": [
+    1057,
+    1500
+  ],
+  "sha256": {
+    "original.png": "74ae70f2aa3dbd2b2b7162c18e74e862c1f5b10e2bb88e67436c67a9580a960f",
+    "paint.png": "681be0732d72f17b6b4aaa6ea45901c6f4fa0d669d382842956a831452a8ee46",
+    "text.png": "8c6737b13eb0972d371ed21256eb104ee66daa3a04ec1391c72f44fe08966407",
+    "cleaned.png": "b87c22e5332d1d5c972a97fc91f8783be3cc5964a875e3b6272bbe487a94ffca",
+    "cleanup-mask.png": "ba7fd9856417b974d42ed7b4906a3c63916356d0ee9d6c2bd18d2870d1d6ef99"
+  }
+}

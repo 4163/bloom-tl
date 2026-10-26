@@ -1,0 +1,16 @@
+{
+  "name": "manga-translation",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "review": "python -I -B manga.py serve",
+    "psd": "node tools/psd.mjs"
+  },
+  "dependencies": {
+    "ag-psd": "33.0.0",
+    "pngjs": "7.0.0"
+  }
+}

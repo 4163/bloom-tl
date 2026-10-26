@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>秋桜 / Manga Translator</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <script>
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem('manga-translation.theme'); } catch {}
+      document.documentElement.dataset.theme = theme === 'light' || theme === 'dark'
+        ? theme : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    })();
+  </script>
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/review.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="秋桜 / 🌸🍂">秋桜 / 🌸🍂 <span>Manga Translator</span></a>
+    <div class="theme-controls" aria-label="Appearance">
+      <button id="system-theme" class="quiet" title="Follow your system appearance">Auto</button>
+      <button id="theme" class="quiet" aria-label="Switch color theme">Theme</button>
+    </div>
+  </header>
+  <nav class="toolbar" aria-label="Page and revision controls">
+    <label>Chapter<select id="chapter" aria-label="Chapter"></select></label>
+    <label>Revision<select id="revision" aria-label="Revision"></select></label>
+    <div class="pagination">
+      <button id="previous" aria-label="Previous page">&larr;</button>
+      <label class="page-label">Page<select id="page" aria-label="Page"></select></label>
+      <button id="next" aria-label="Next page">&rarr;</button>
+    </div>
+    <label>Compare with<select id="baseline" aria-label="Compare with"><option value="source">Original</option></select></label>
+    <label id="discard-label" hidden>Imported edit<button type="button" id="discard-revision" class="quiet danger" disabled>Discard page revision</button></label>
+    <label id="variant-label" hidden>Variant<select id="variant" aria-label="Variant"><option value="">Approved</option></select></label>
+    <label class="toolbar-item-right">Repository
+      <a id="github-link" class="toolbar-link" href="https://github.com/4163/bloom-tl" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository" title="GitHub: 4163/bloom-tl">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </label>
+  </nav>
+  <main>
+    <section class="review-heading">
+      <div><p class="eyebrow" id="reference">Review workspace</p><h1 id="heading">Loading chapters</h1></div>
+      <div class="output-choice" aria-label="Page output selection">
+        <p id="output-status" role="status" aria-live="polite">Final translation: waiting for pages</p>
+        <div class="output-actions">
+          <button type="button" id="select-output" disabled>Use this revision for final output</button>
+          <button type="button" id="latest-output" class="quiet" hidden>Use latest</button>
+        </div>
+      </div>
+    </section>
+    <div id="psd-drop-hint" class="psd-drop-hint" role="status" aria-live="polite" hidden><span></span></div>
+    <section class="scrubber-bar" aria-label="Comparison position">
+      <span id="left-label">Original</span>
+      <input id="scrub" type="range" min="0" max="100" step="0.1" value="50" aria-label="Comparison position">
+      <span>English</span>
+      <button id="reset" class="quiet">Center</button>
+    </section>
+    <div class="region-toolbar" aria-label="Page note areas">
+      <button type="button" id="mark-area" class="quiet" aria-pressed="false" disabled title="Draw boxes on the English page to attach to your note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m15 5 4 4M4 20l4-1L20 7a2.8 2.8 0 0 0-4-4L4 15z"/></svg>
+        Mark area
+      </button>
+      <span id="region-status" role="status" aria-live="polite">Optional areas for your page note.</span>
+      <div id="region-list" aria-label="Selected areas"></div>
+      <button type="button" id="write-note" hidden>Write note</button>
+      <button type="button" id="clear-area" class="quiet" hidden>Clear all</button>
+    </div>
+    <figure>
+      <div class="page-stage">
+        <div id="comparison" class="comparison" tabindex="0" aria-label="Drag horizontally to compare the page">
+          <img id="english" alt="English translation" decoding="async" fetchpriority="high" draggable="false">
+          <div class="original-layer"><img id="original" alt="Comparison page" decoding="async" draggable="false"></div>
+          <div class="divider" aria-hidden="true"><span class="handle">&harr;</span></div>
+          <div id="note-region" class="note-regions" hidden aria-hidden="true"></div>
+        </div>
+      </div>
+    </figure>
+    <section class="audit" aria-label="Review notes">
+      <div><h2>Your review</h2><p>Notes stay with this chapter and revision. Original files are preserved.</p></div>
+      <form id="note-form">
+        <label for="note">Page notes <span id="note-area-label" hidden>· Area attached</span></label>
+        <div id="note-areas" class="note-areas" aria-label="Area references" hidden></div>
+        <textarea id="note" rows="2" placeholder="Describe the wording, cleanup or layout that needs attention." required></textarea>
+        <p>Notes are saved for the agent's next revision. Appending a note does not start a revision.</p>
+      </form>
+      <div class="audit-actions">
+        <button id="append-note" type="submit" form="note-form" disabled>Append note</button>
+        <button type="button" id="import-edit" disabled>Import PSD</button>
+        <button type="button" id="export-psd" disabled>Export PSD</button>
+      </div>
+      <input id="edit-file" type="file" accept=".psd" hidden>
+      <a id="psd-link" download hidden></a>
+      <div class="import-help">
+        <p>Drop a PSD anywhere to revise this page, or use Import PSD. Changes save as a new revision. Use 8-bit RGB with a merged preview.</p>
+        <p id="editable-status" hidden>This version has no layered PSD to export.</p>
+        <p id="edit-status" role="status" aria-live="polite"></p>
+      </div>
+      <details><summary id="question-count">Review notes</summary><ul id="questions"></ul></details>
+    </section>
+  </main>
+  <footer>秋桜<span aria-hidden="true">&middot;</span> x4163#8170</footer>
+  <template id="option-template"><option></option></template>
+  <template id="question-template"><li><span class="question-ref"></span><p class="question-text"></p><p class="question-resolution" hidden></p><div class="note-actions"><button type="button" class="show-area quiet" hidden>Show area</button><button type="button" class="show-fix quiet" hidden>View addressed page</button><button type="button" class="remove-note quiet" hidden>Remove note</button></div></li></template>
+</body>
+</html>

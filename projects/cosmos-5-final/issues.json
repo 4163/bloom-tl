@@ -1,0 +1,183 @@
+[
+  {
+    "id": "q0001",
+    "record": "cosmos-5-final.p0004.r007",
+    "stage": "translation",
+    "revision": "r004",
+    "question": "Name-reading limitation recorded in the original review.",
+    "status": "accepted",
+    "decision": "Retain Hiroki and Hiro-kun as the approved editorial choices. The full name reading is unconfirmed.",
+    "decided_by": "user",
+    "provenance": "Earlier conversation approved the final results; see archived translation notes."
+  },
+  {
+    "id": "q0002",
+    "record": "cosmos-5-final.p0060.r007",
+    "stage": "translation",
+    "revision": "r004",
+    "question": "Name-reading limitation recorded in the original review.",
+    "status": "accepted",
+    "decision": "Keep the unconfirmed credit names in Japanese. Preserve the approved corrected spelling and translated company suffix.",
+    "decided_by": "user",
+    "provenance": "Earlier conversation approved the final results; see archived translation notes."
+  },
+  {
+    "id": "q0003",
+    "stage": "visual",
+    "record": "0001",
+    "revision": "r005",
+    "question": "test\n",
+    "status": "removed",
+    "at": "2026-10-25T15:25:04+00:00",
+    "removed_by": "user",
+    "removed_at": "2026-10-25T15:25:24+00:00"
+  },
+  {
+    "id": "q0004",
+    "stage": "visual",
+    "record": "0008",
+    "revision": "r005",
+    "question": "[Area 1] toon?",
+    "status": "removed",
+    "at": "2026-10-25T16:04:28+00:00",
+    "regions": [
+      {
+        "id": "area-1",
+        "coordinate_space": "page_pixels",
+        "x": 263,
+        "y": 78,
+        "width": 149,
+        "height": 139,
+        "canvas_size": [
+          1057,
+          1500
+        ],
+        "image_path": "revisions/r005/pages/0008.png",
+        "image_sha256": "9d4b70a6846fe0b05ec28466e89cc5f66077eb1a3a417df62e068481aeb3d973"
+      }
+    ],
+    "removed_by": "user",
+    "removed_at": "2026-10-25T16:05:06+00:00"
+  },
+  {
+    "id": "q0005",
+    "stage": "visual",
+    "record": "0008",
+    "revision": "r005",
+    "question": "toon?  review the transcript and see what that is",
+    "status": "resolved",
+    "at": "2026-10-25T16:05:49+00:00",
+    "regions": [
+      {
+        "id": "area-1",
+        "coordinate_space": "page_pixels",
+        "x": 265,
+        "y": 93,
+        "width": 143,
+        "height": 119,
+        "canvas_size": [
+          1057,
+          1500
+        ],
+        "image_path": "revisions/r005/pages/0008.png",
+        "image_sha256": "9d4b70a6846fe0b05ec28466e89cc5f66077eb1a3a417df62e068481aeb3d973"
+      }
+    ],
+    "addressed_revision": "r013",
+    "addressed_image_path": "manual/r013/pages/0008.png",
+    "addressed_image_sha256": "a057e0ae2ace6338d89773f34723eed1cad77b017fe3122812c9bbdaabfc9a5f",
+    "decision": "Dropped the comma and replaced the unmapped em-dash with double hyphen so it renders cleanly as 'HER TOO--'.",
+    "decided_by": "agent",
+    "decided_at": "2026-10-25T16:26:59+00:00"
+  },
+  {
+    "id": "q0006",
+    "stage": "visual",
+    "record": "0036",
+    "revision": "r005",
+    "question": "missing heart text, it's displayed as 'N0' for some reason",
+    "status": "accepted",
+    "at": "2026-10-25T16:59:17+00:00",
+    "regions": [
+      {
+        "id": "area-1",
+        "coordinate_space": "page_pixels",
+        "x": 113,
+        "y": 1016,
+        "width": 193,
+        "height": 250,
+        "canvas_size": [
+          1057,
+          1500
+        ],
+        "image_path": "revisions/r005/pages/0036.png",
+        "image_sha256": "1724202e8084bcbd35e0f6cdefeb11d8f04199d13b977ae55b254c05c766c55b"
+      }
+    ],
+    "decision": "User opted to manually fix the issue.",
+    "decided_by": "user",
+    "decided_at": "2026-10-25T17:01:06+00:00"
+  },
+  {
+    "id": "q0007",
+    "stage": "visual",
+    "record": "0048",
+    "revision": "r005",
+    "question": "text here is a little small. it can be a tad bit bigger",
+    "status": "resolved",
+    "at": "2026-10-25T18:11:28+00:00",
+    "regions": [
+      {
+        "id": "area-1",
+        "coordinate_space": "page_pixels",
+        "x": 247,
+        "y": 1152,
+        "width": 174,
+        "height": 218,
+        "canvas_size": [
+          1057,
+          1500
+        ],
+        "image_path": "revisions/r005/pages/0048.png",
+        "image_sha256": "fb04c9c03f0084a2bb2d61c1b980cbfa2f58770cb3eed8cb8bde1efe4d71b6b8"
+      }
+    ],
+    "addressed_revision": "r036",
+    "addressed_image_path": "manual/r036/pages/0048.png",
+    "addressed_image_sha256": "56d38a5595e8d2896a0459dbed585918e366837799b1815235085abefdc9b854",
+    "decision": "Enlarged font size from 9 to 12 with comfortable margins, keeping it balanced in the bubble.",
+    "decided_by": "agent",
+    "decided_at": "2026-10-25T18:25:44+00:00"
+  },
+  {
+    "id": "q0008",
+    "stage": "visual",
+    "record": "0050",
+    "revision": "r005",
+    "question": "wrong text rendering after 'bloomed', it visually shows N0 rather than a proper character",
+    "status": "resolved",
+    "at": "2026-10-25T18:36:48+00:00",
+    "regions": [
+      {
+        "id": "area-1",
+        "coordinate_space": "page_pixels",
+        "x": 17,
+        "y": 1369,
+        "width": 355,
+        "height": 107,
+        "canvas_size": [
+          1057,
+          1500
+        ],
+        "image_path": "revisions/r005/pages/0050.png",
+        "image_sha256": "1c20e5a06fbd84c7ffad485198ad42a75b906cc8bd8937a58debee695e978c92"
+      }
+    ],
+    "addressed_revision": "r040",
+    "addressed_image_path": "manual/r040/pages/0050.png",
+    "addressed_image_sha256": "9f1551a6ff6c0e0f59f218763fc3cb93deb77ec7aad523c6796c3856b0ae62dc",
+    "decision": "Re-rendered text layers with active font fallback to render the proper em dash rather than the corrupted numero sign.",
+    "decided_by": "agent",
+    "decided_at": "2026-10-25T18:53:21+00:00"
+  }
+]

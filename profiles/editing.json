@@ -1,0 +1,12 @@
+{
+  "format": "psd",
+  "color_mode": "8-bit RGB",
+  "order_top_first": ["English text", "Cleanup paint", "Original page"],
+  "text": "Transparent raster of the translated lettering, with its text effects",
+  "paint": "Native cleanup pixels, transparent wherever the original page is unchanged",
+  "original": "Untouched source raster, locked at the bottom",
+  "extra_output": "text.png",
+  "preview": "Merged compatibility image saved in the PSD",
+  "import_limit_mib": 512,
+  "desktop_application_required": false
+}
