@@ -16,7 +16,7 @@ Chapter: <chapter name or slug>
 Source archive or scans folder: <existing path, if already available>
 ```
 
-The agent sets up the tools, checks the Japanese transcript against the scans, then translates and letters the chapter. It asks you about uncertain readings and opens the review app when the pages are ready.
+The agent sets up the tools, checks the language transcript (Japanese in this case) against the scans, then translates and letters the chapter. It asks you about uncertain readings and opens the review app when the pages are ready.
 
 Supply an existing archive or scans folder, or place the files under `input/<chapter>/` when asked. The agent reuses existing chapter work and preserves your original scans.
 
@@ -26,17 +26,19 @@ The agent gives you the review app's URL (http://localhost:8765/). Completed rev
 
 <p align="center">
   <img src="web/readme-review.png" alt="Browser review of page 0037, comparing the Japanese original with the English translation" width="960">
+  <br>
+  See work: <a href="projects/cosmos-5-final/source/pages/0037.jpg">Japanese</a> &rarr; <a href="projects/cosmos-5-final/final/ef46b917790985db/pages/0037.png">English</a>
 </p>
 
-- Compare each page with its original or an earlier revision using Compare with and the comparison slider.
-- Leave feedback in chat or save it with `Append note`. To mark specific areas, draw boxes with `Mark area`, then choose Write note. Saved notes wait for the agent's next review pass. Remove note withdraws a request.
+- Compare each page with its original or an earlier revision using `Compare with` and the comparison slider.
+- Leave feedback in chat or save it with `Append note`. To mark specific areas, draw boxes with `Mark area`, then choose `Write note`. Saved notes wait for the agent's next review pass. `Remove note` withdraws a request.
 - Output selection shows what will be exported. Each page follows its latest completed version unless you choose `Use this version for output`. `Use latest` clears that choice. Browsing older versions does not change the output.
 
 ## Edit a PSD
 
 Choose `Export PSD` to edit a page in your image editor. Each PSD has separate raster layers for English text, cleanup paint and the locked original.
 
-Save an 8-bit RGB PSD with a merged compatibility preview. Drop it onto the review app or choose `Import PSD`. The import applies to the displayed page and saves changes as a new revision. Other pages and any versions you selected for output stay in place.
+Save an 8-bit RGB PSD with a merged compatibility preview. `Drag and drop` it onto the review app or choose `Import PSD`. The import applies to the displayed page and saves changes as a new revision. Other pages and any versions you selected for output stay in place.
 
 You can alternate manual edits with agent revisions. Eligible imports offer `Discard page revision` on the page they changed.
 
@@ -46,7 +48,7 @@ Tell the agent when you are finished. It asks whether you want the full output s
 
 The full suite includes flattened PNGs, the chapter ZIP and available PSDs for the selected pages. Both options use your exact output selection, including manual edits. Originals and working files stay in the project.
 
-The bundled `projects/cosmos-5-final/` chapter, 秋桜が咲いた日に 第5-終わり話, is a review/export example. It includes historical page versions and final output, but not the native inputs needed to resume agent rendering.
+The bundled [`projects/cosmos-5-final/`](projects/cosmos-5-final/final/ef46b917790985db/pages/0001.png) chapter, 秋桜が咲いた日に 第5-終わり話, is a review/export example. It includes historical page versions and final output, but not the native inputs needed to resume agent rendering.
 
 ## Guides
 
