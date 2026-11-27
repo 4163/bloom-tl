@@ -40,3 +40,10 @@ Write from the staged diff and verified context. Use a concise past-tense header
 Write from the branch's full change against its base. Follow an established repository title convention when one exists; otherwise use a concise title describing the outcome. Lead the body with the user-visible problem and resulting behavior, explain relevant changes and tradeoffs, then report checks actually performed. Do not invent validation or include abandoned approaches unless they explain a current decision.
 
 When asked to provide message text, put the header or title and the body in separate copyable `text` code blocks. Follow [unslop](../unslop/SKILL.md) for plain prose. Keep Markdown paragraphs on one source line and avoid em dashes, puffery and arbitrary indentation.
+
+## GitHub links and mentions
+
+Apply these rules across commit headers, commit bodies, and pull request titles and descriptions:
+
+- Omit `#` before slice, task, and roadmap item numbers (write `2.1.1` or `item 2.1.1`, never `#2.1.1`). GitHub auto-links `#<digits>` to issues and pull requests even inside backticks, which attaches commits to unrelated history. Reserve `#<digits>` strictly for intentional GitHub issue or pull request references.
+- Omit `@` before role names, agent labels, and handles (write `coordinator` or `worker`, never `@coordinator`). GitHub treats `@<name>` as a user mention, which notifies unrelated accounts. Reserve `@<name>` strictly for intentional GitHub user or team mentions.
